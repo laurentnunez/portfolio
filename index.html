@@ -1,0 +1,167 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laurent Nunez - Développeur Web</title>
+  <meta name ="description" content="Portfolio de Laurent Nunez - Développeur Web">
+  <link rel="shortcut icon" href="./image/favicon.ico" >
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!--
+    Header
+      Logo
+      menu
+      social
+      burger
+
+    About
+
+    Competences
+
+    Projets
+      Apothéose
+      Tisane
+    
+    CV
+
+    Contact
+
+    Footer
+
+  -->
+  
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__container-logo">
+        LN
+      </div>
+      <nav class="header__container-navbar">
+        <ul class="menu">
+          <li><a href="#about">A Propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#download">CV</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="right">
+        <ul class="header__social">
+          <li>
+            <a href ="" target = "_blank">
+              <svg aria-hidden="true" width="30" class="icon-linkedin" xmlns="http://www.w3.org/2000/svg" focusable="false" data-prefix="fab" viewbox="0 0 448 512">
+                <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+              </svg>
+            </a>
+          </li>
+        
+          <li>
+            <a href ="" target = "_blank">
+              <svg aria-hidden="true" width="32" class="icon-github" xmlns="http://www.w3.org/2000/svg" focusable="false" data-prefix="fab" viewbox="0 0 496 512">
+                <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+              </svg>
+            </a>
+          </li>        
+        </ul>
+        <button class="burger"><span class="bar"></span></button>
+      </div>
+    </div>
+  
+  </header>
+
+  <section id="about" class="about">
+    
+    <div class="about__container">
+      <div class="grid">
+        <div class="about__left">
+          <span>Développeur Web</span>
+          <h1 class="about__left-title">Hello, je m'appelle Laurent</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas non in hic dolorem veniam dolores, laudantium quos esse quae ullam facilis inventore ad? Nesciunt placeat exercitationem eos dolore similique provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis ea, unde, eveniet cupiditate et nobis ipsa assumenda praesentium adipisci non officia qui quis. Molestiae velit consequuntur molestias neque illo id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe voluptate sequi sit voluptates necessitatibus ratione deserunt commodi facere neque suscipit? Doloribus quos sit vero sapiente cupiditate quia accusantium quidem corrupti.</p>
+        </div>
+        <div class="about__right">
+          <div class="about__right-avatar">
+            <img src="image/avataaars.png" alt="Laurent Nunez - Développeur Web">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id ="skills" class="skills">
+    <h2 class="skills__title">Mes Compétences</h2>
+    <div class="container">
+      <div class="grid">
+        
+        <div class="skills__left">
+
+        </div>
+        <div class="skills__right">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id ="projects" class="projects">
+    <h2 class="projects__title">Mes Projets</h2>
+    <div class="projects__container">
+
+        <div class="projects__card">
+          <img src="https://picsum.photos/600/400?random=1" alt="projet1">
+          <h3 class="projects__card-title">Udruga</h3>
+          <div class="projects__card-subtitle">Projet de fin d'études (O'Clock)</div>
+        </div>  
+        <div class="projects__card">
+          <img src="https://picsum.photos/600/400?random=2" alt="projet2">
+          <h3 class="projects__card-title">Tisane Corp</h3>
+            <div class="projects__card-subtitle">Ma plateforme de podcasts</div>
+        </div>
+        <div class="projects__card">
+          <img src="https://picsum.photos/600/400?random=3" alt="projet3">
+          <h3 class="projects__card-title">Projet 3</h3>
+          <div class="projects__card-subtitle">Execice de formation</div>
+        </div>
+    
+    </div>
+  </section>
+  <section id="download" class="download">
+    <h2 class="download__title">CV</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quisquam, saepe consequatur numquam debitis, accusantium deleniti maiores sint cum, tenetur eaque aut pariatur sit? Temporibus perferendis blanditiis est odio ab?</p>
+    <button class="buttons">Télécharger</button>
+  </section>
+  <section id="contact" class="contact"> 
+      <div class="contact__container">
+        <div class="contact__left-section">
+          <h2 class="contact__title">Contact</h2>
+          <p class="contact__text">N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</p> 
+        </div>
+        <form class="contact__form">
+          <label class="firstname">
+            <input type="text" name="firstname" placeholder="Prénom">
+          </label>
+          <label class="lastname">
+            <input type="text" name="lastname" placeholder="Nom">
+          </label>
+          <label class="email">
+            <input type="email" name="firstname" placeholder="Email">
+          </label>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button class="buttons">Envoyer</button>
+        </form>
+        
+      </div> 
+  </section>
+  
+  <footer>
+    <div class="copyright">Copyright © - Laurent Nunez. Tous droits réservés</div>
+  </footer>
+  
+</body>
+</html>
