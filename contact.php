@@ -1,16 +1,12 @@
 <?php
 
-$myadress = "laurent.nunez.dev@gmail.com";
+$to = "laurent.nunez.dev@gmail.com";
 $name = $_POST['name'];
-$email =  $_POST['email'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
+$email =  $_POST['email'];
+$headers = 'From:' . $email . "\r\n" . 'Reply-to: ' . $email . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
-
-$themail = mail($myadress, $message, "From: ". $name . "depuis le portfolio" . "/r/n" . "Reply-to:" . $email)
-or die ("Il y a eu un petit soucis, le mail n'a pas été envoyé :(");
-
-if ($themail) {
-echo "<p>Le mail a bien été envoyé !</p>";
-}
+mail($to, $subject, $message, );
 
 ?>
