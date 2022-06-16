@@ -142,20 +142,26 @@
           <h2 class="contact__title">Contact</h2>
           <p class="contact__text">N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</p> 
         </div>
-        <form class="contact__form">
-          <label class="firstname">
-            <input type="text" name="firstname" placeholder="Prénom">
-          </label>
-          <label class="lastname">
-            <input type="text" name="lastname" placeholder="Nom">
-          </label>
-          <label class="email">
-            <input type="email" name="firstname" placeholder="Email">
-          </label>
-            <textarea name="message" placeholder="Message"></textarea>
-            <button class="buttons">Envoyer</button>
-        </form>
-        
+        <div class="contact__right-section">
+          <form class="contact__form" method="post">
+            <label class="name">
+              <input type="text" name="name" placeholder="Nom" required>
+            </label>
+            <label class="email">
+              <input type="email" name="firstname" placeholder="Email" required>
+            </label>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="submit">
+          </form>
+          <?php
+            if (isset($_POST["message"])) {
+              $message = "ce message vous a été envoyé via le portfolio"
+
+              
+            }
+          
+          ?>
+        </div>
       </div> 
   </section>
   
