@@ -37,6 +37,8 @@ h2 {
   font-size: 50;
   text-align: center;
   color: #f7e017;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 img {
@@ -56,6 +58,7 @@ opacity: 0.8;
 transition: 0.3s;
 cursor: pointer;
 margin-top: 2rem;
+text-decoration:none ;
 }
 
 .buttons:hover{
@@ -84,6 +87,7 @@ margin-top: 2rem;
 .header a {
   text-decoration:none ;
   color:black;
+  transition: 0.3s;
 }
 
 .header a:hover{
@@ -229,107 +233,57 @@ margin-top: 2rem;
   background-image: url(https://www.socialnetlink.org/wp-content/uploads/2021/11/a0a74adca1_50147933_developpeur-web1.jpeg);
   background-size: cover;
   margin:0;
-  padding-bottom: 3rem;
+  padding:0;
+  display: flex;
+  justify-content: center;
 }
 
 
 @media screen and (max-width: 768px) {
   .contact {
-    padding: 0;
+    
   }
 }
 
 
 .contact__container {
-  display: flex;
-  justify-content: center;
-  min-height:30rem ;
+  background-color:rgba(0, 0, 0, 0.514);
+  flex-direction: column;
   align-items: center;
   margin: auto;
+  padding: 2rem 5rem 5rem 5rem;
+  width: 100%;
+  font-size: 20;
 }
 
 @media screen and (max-width: 768px) {
   
   .contact__container {
-    display: flex;
-    flex-direction: column;
     margin: auto;
-    text-align: center;
+    padding: 3rem 2rem 7rem 2rem;
+    }
   }
 
-  
+
+.contact p {
+  padding-bottom: 2rem;
 }
 
-
-form {
-  
-  margin:2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-@media screen and (max-width: 950px) {
-  form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap-reverse;
-    width: 100%;
-    align-items: center;
-    margin: auto ;
-    padding-bottom: 2rem;
-    
-  }
-}
-
-   
-    label {
-      width: 100%;
-      margin: auto;  
-      
-    }
-
-    input {
-      width: 100%;
-      margin: auto;
-      margin: 1rem 0 1rem 0;
-      padding:0.8rem;
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 16;
-    }
-
-    textarea {
-      width: 100%;
-      height: 8rem;
-      margin: auto;
-      margin-top: 2rem;
-      padding:0.8rem;
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 16;
-    }
-  
-
-  .contact__left-section {
-    display: flex;
-    flex-direction: column;
-    
-    background-color:rgba(0, 0, 0, 0.514);
-    width: 60%;
-    padding: 1rem;
-    margin:2rem;
-    
-    
+.contact a { 
+  background-color: #f7e017;
+  color: black;
+  padding: 1rem;
+  border: none;
+  font-size: 20;;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration:none;
   }
 
-
-  @media screen and (max-width: 768px) {
-    .contact__left-section {
-      margin: auto;
-      width: 100%;
-    }
+  .contact a:hover{
+    opacity: 1
   }
-
 
 footer {
   margin: 3rem;
