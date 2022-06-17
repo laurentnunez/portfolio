@@ -17,7 +17,7 @@ li {
 
 section {
   padding: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   align-items: center;
   text-align: center;
 }
@@ -65,24 +65,6 @@ text-decoration:none ;
   opacity: 1
 }
 
-.grid {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-}
-
-@media screen and (max-width: 768px) {
-  
-  .grid {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  
-
-}
 
 .header a {
   text-decoration:none ;
@@ -176,7 +158,21 @@ text-decoration:none ;
   }
 }
 
+.about__container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
 
+@media screen and (max-width: 768px) {
+  
+  .about__container {
+    flex-direction:column-reverse
+  } 
+
+}
 
 
 .about__left {
@@ -190,13 +186,46 @@ text-decoration:none ;
     .about__left {
       width: 100%;
       margin: auto;
-      padding: 0 1rem 0 1rem;
+      padding: 2rem 1rem 0 1rem;
   }
   }
 
 .skills {
   background-color: rgb(19, 19, 19);
+  
 }
+
+.skills__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills__subsection {
+  flex-direction: column;
+  
+}
+
+.skills_right {
+  width: 50%;
+}
+
+.skills__left {
+  width: 50%;
+}
+
+
+
+.skills__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills strong {
+  font-size: 30;
+}
+
 
 .projects__container {
  display: flex;
@@ -222,12 +251,83 @@ text-decoration:none ;
 
 
 .download {
-  background-color: rgb(19, 19, 19);
-  padding-right: 1rem;
-  padding-left: 1rem;
+  background-color: rgb(19, 19, 19); 
+}
+
+@media screen and (max-width: 768px) {
+  .download {
+    padding-bottom: 3rem;
+  }
+}
+
+.download__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .download__container {
+  flex-direction:column-reverse;
+  }
 }
 
 
+.download__left-section {
+  flex-direction: column;
+  width:50%;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .download__left-section {
+    width: 100%;
+  }
+}
+
+.download__sub-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.download__right-section {
+  flex-direction: column;
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .download__right-section {
+    width: 100%;
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+
+.download a { 
+  
+  padding: 1rem;
+  border: none;
+  font-size: 20;;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration:none;
+  }
+
+  .download a:hover{
+    opacity: 1
+  }
+
+.download p {
+    margin:0;
+    line-height: 1.5;
+}
+
+.download strong {
+  color: #f7e017;
+}
 
 .contact {
   background-image: url(https://www.socialnetlink.org/wp-content/uploads/2021/11/a0a74adca1_50147933_developpeur-web1.jpeg);
@@ -236,13 +336,6 @@ text-decoration:none ;
   padding:0;
   display: flex;
   justify-content: center;
-}
-
-
-@media screen and (max-width: 768px) {
-  .contact {
-    
-  }
 }
 
 
