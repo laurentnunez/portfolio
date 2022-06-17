@@ -41,6 +41,18 @@ h2 {
   margin-bottom: 2rem;
 }
 
+h3 {
+  font-size: 30;
+  margin-bottom: 0;
+}
+
+
+h4 {
+  color: #f7e017;
+}
+
+
+
 img {
 max-width: 100%;
 height: auto;
@@ -198,29 +210,71 @@ text-decoration:none ;
 .skills__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-around;
 }
+
+.skills_right {
+  width: 80%;
+  padding: 4rem;
+}
+
+.skills__left {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  
+}
+
+.skills__sub-section {
+  padding-bottom:1rem ;
+}
+
+.skills__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+.skills__icon{
+  padding: 1rem;
+}
+
+.skills svg {
+  width: 90px;
+  height: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills__container {
+    flex-direction: column;
+    justify-content: center; 
+  }
+  .skills_right {
+    width: 100%;
+  }
+  
+  .skills__left {
+    width: 100%;
+  }
+
+  .skills__logos {
+    flex-wrap: wrap;  
+  }
+
+}
+
 
 .skills__subsection {
   flex-direction: column;
   
 }
 
-.skills_right {
-  width: 50%;
-}
-
-.skills__left {
-  width: 50%;
-}
 
 
 
-.skills__logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
+
 
 .skills strong {
   font-size: 30;
@@ -323,10 +377,6 @@ text-decoration:none ;
 .download p {
     margin:0;
     line-height: 1.5;
-}
-
-.download strong {
-  color: #f7e017;
 }
 
 .contact {
