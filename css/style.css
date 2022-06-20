@@ -6,7 +6,7 @@ body {
   background-color: black;
   color:white;
   font-family: 'Ubuntu', sans-serif;
-   margin: 0; 
+  margin: 0;
 }
 
 li {
@@ -16,8 +16,8 @@ li {
 }
 
 section {
-  padding: 3rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   align-items: center;
   text-align: center;
 }
@@ -30,7 +30,7 @@ section {
 }
 
 h1 {
-  font-size: 40;
+  font-size: 60;
 }
 
 h2 {
@@ -49,6 +49,7 @@ h3 {
 
 h4 {
   color: #f7e017;
+  margin:0;
 }
 
 
@@ -87,7 +88,7 @@ text-decoration:none ;
 .header a:hover{
   color: rgb(107, 107, 107);  
   }
-
+ 
 
 .header {
   background-color:#f7e017;
@@ -97,13 +98,11 @@ text-decoration:none ;
 }
 
 
-
-
 .header__container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding:  0.5rem;
   height: 4rem;
   
@@ -117,6 +116,11 @@ text-decoration:none ;
       transition: all .4s ease-out;
       
     }
+  }
+
+
+  .header__container-navbar {
+    font-size: 20;
   }
 
   @media screen and (max-width:768px) {
@@ -170,12 +174,25 @@ text-decoration:none ;
   }
 }
 
+.about__title {
+  background-color: black;
+  color:#f7e017;
+  padding:0.5rem 0 3rem 0;
+  border: #f7e017 1px solid;
+  
+}
+
+.about span {
+  font-size: 30;
+}
+
 .about__container {
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
   margin: auto;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -186,6 +203,9 @@ text-decoration:none ;
 
 }
 
+.about p {
+  line-height:1.8 ;
+}
 
 .about__left {
   width: 50%;
@@ -210,7 +230,7 @@ text-decoration:none ;
 .skills__container {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content:space-evenly;
 }
 
 .skills_right {
@@ -270,17 +290,6 @@ text-decoration:none ;
   
 }
 
-
-
-
-
-
-
-.skills strong {
-  font-size: 30;
-}
-
-
 .projects__container {
  display: flex;
  flex-direction: row;   
@@ -317,26 +326,31 @@ text-decoration:none ;
 .download__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-evenly;
   margin: auto;
 }
 
 @media screen and (max-width: 768px) {
   .download__container {
-  flex-direction:column-reverse;
+  flex-direction:column;
+  align-items: center;
   }
 }
 
-
 .download__left-section {
   flex-direction: column;
-  width:50%;
+  width:40%;
   text-align: left;
+  margin: auto;
+  border: #f7e017 1px solid;
+  padding: 4rem;
+  
 }
 
 @media screen and (max-width: 768px) {
   .download__left-section {
     width: 100%;
+    padding: 2rem;
   }
 }
 
@@ -346,9 +360,25 @@ text-decoration:none ;
   align-items: center;
 }
 
+.download__sub-section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .download__sub-section-one{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
+
 .download__right-section {
   flex-direction: column;
-  width: 40%;
+  text-align: left;
+  width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -377,45 +407,76 @@ text-decoration:none ;
 .download p {
     margin:0;
     line-height: 1.5;
+    align-items: center;
 }
 
 .contact {
   background-image: url(https://www.socialnetlink.org/wp-content/uploads/2021/11/a0a74adca1_50147933_developpeur-web1.jpeg);
   background-size: cover;
+  flex-direction: column;
   margin:0;
   padding:0;
   display: flex;
   justify-content: center;
 }
 
-
 .contact__container {
-  background-color:rgba(0, 0, 0, 0.514);
+  background-color:rgba(0, 0, 0, 0.774);
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:center;
   margin: auto;
-  padding: 2rem 5rem 5rem 5rem;
   width: 100%;
   font-size: 20;
 }
 
-@media screen and (max-width: 768px) {
-  
-  .contact__container {
-    margin: auto;
-    padding: 3rem 2rem 7rem 2rem;
-    }
-  }
 
+.contact__sections {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__sections {
+    flex-direction:column;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.contact_left-section {
+  width: 80%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_left-section {
+    margin: auto;
+  }
+}
+
+
+.contact_right-section {
+  width: 80%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_right-section {
+    margin: auto;
+  }
+}
 
 .contact p {
-  padding-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .contact a { 
-  background-color: #f7e017;
-  color: black;
-  padding: 1rem;
+  
+  color: #f7e017;
   border: none;
   font-size: 20;;
   opacity: 0.8;
@@ -429,7 +490,7 @@ text-decoration:none ;
   }
 
 footer {
-  margin: 3rem;
+  margin: 1rem;
   text-align: center;
 }
 
