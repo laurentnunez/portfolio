@@ -174,6 +174,14 @@ text-decoration:none ;
   }
 }
 
+
+
+.about {
+  background-color: black;
+}
+
+
+
 .about__title {
   background-color: black;
   color:#f7e017;
@@ -222,9 +230,22 @@ text-decoration:none ;
   }
   }
 
+.about__right-profil {
+  padding-bottom: 7rem;
+}
+
+
+
+
+
 .skills {
-  background-color: rgb(19, 19, 19);
-  
+  background: 
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(#1f1f1f 15%, transparent 20%) 0 1px,
+radial-gradient(#1f1f1f 15%, transparent 20%) 8px 9px;
+background-color:rgba(88, 88, 88, 0.1);
+background-size:2.5px 2.5px;
 }
 
 .skills__container {
@@ -303,8 +324,22 @@ text-decoration:none ;
 }
 
 .projects__card {
-  padding: 0 0.5rem 0 0.5rem; 
+  padding: 1rem;
  }
+
+ .projects__card a {
+  background-color: #f7e017;
+	width: 100px;
+	height: 100px;
+	margin: 32px auto;
+	text-decoration:none;
+  
+ }
+
+ .projects__card-title {
+  color:rgb(194, 194, 194);
+}
+ 
  
  @media screen and (max-width:768px) {
    .projects__card {
@@ -314,8 +349,15 @@ text-decoration:none ;
 
 
 .download {
-  background-color: rgb(19, 19, 19); 
-}
+  background: 
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(#1f1f1f 15%, transparent 20%) 0 1px,
+  radial-gradient(#1f1f1f 15%, transparent 20%) 8px 9px;
+  background-color:rgba(88, 88, 88, 0.1);
+  background-size:2.5px 2.5px;
+  }
+
 
 @media screen and (max-width: 768px) {
   .download {
