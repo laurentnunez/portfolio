@@ -31,6 +31,7 @@ section {
 
 h1 {
   font-size: 60;
+  margin: 1.5rem 0 1rem 0;
 }
 
 @media screen and (max-width:768px) {
@@ -189,7 +190,8 @@ text-decoration:none ;
 
 .about {
   background-color: black;
-  min-height: 90vh;
+  padding-top: 2rem;
+  
 }
 
 
@@ -197,7 +199,7 @@ text-decoration:none ;
 .about__title {
   background-color: black;
   color:#f7e017;
-  padding:0.5rem 0 3rem 0;
+  padding:0 0 2rem 0;
   border: #f7e017 1px solid;
     
 }
@@ -218,6 +220,7 @@ text-decoration:none ;
   text-align: center;
   align-items: center;
   margin: auto;
+  margin-top: 3rem;
   
 }
 
@@ -231,7 +234,8 @@ text-decoration:none ;
 
 .about p {
   line-height:1.8 ;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  font-size: 20;
 }
 
 @media screen and (max-width: 768px) {
@@ -241,9 +245,8 @@ text-decoration:none ;
 }
 
 .about__left {
-  width: 50%;
-  margin-right: 3rem;
-  margin-left: 6rem;
+  width: 40%;
+  margin: 0 5rem 0 7rem;
   align-items: flex-start;
 }
 
@@ -256,13 +259,25 @@ text-decoration:none ;
   }
   }
 
+.about__right {
+  margin: 0 5rem 0 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about__right {
+    margin: 0;
+  }
+}
+
+
+
 .about__right-profil {
-  padding-bottom: 7rem;
+  padding:2rem 0 7rem 0;
 }
 
 @media screen and (max-width: 768px) {
   .about__right-profil {
-    padding-bottom:3rem;
+    padding: 0.5rem 0 1rem 0;
   }
 }
 
@@ -493,7 +508,7 @@ text-decoration:none ;
 
 .download p {
     margin:0;
-    line-height: 1.5;
+    line-height: 1.8;
     align-items: center;
 }
 
