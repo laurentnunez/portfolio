@@ -2,11 +2,16 @@
   box-sizing:border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   color:white;
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
+  
 }
 
 li {
@@ -16,16 +21,15 @@ li {
 }
 
 section {
-  height: 100vh;
-  padding-top: 9rem;
-  padding-bottom: 5rem;
   align-items: center;
   text-align: center;
+  margin: 2rem 0 2rem 0;
 }
 
 @media screen and (max-width: 768px) {
   section {
     padding: 2rem 0 2rem 0;
+    margin:1rem;
   }
   
 }
@@ -90,6 +94,10 @@ text-decoration:none ;
 
 .buttons:hover{
   opacity: 1
+}
+
+strong {
+  color: #f7e017;
 }
 
 
@@ -194,8 +202,8 @@ text-decoration:none ;
 
 .about {
   background-color: black;
-  padding-top: 2rem;
-  
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 
@@ -287,7 +295,7 @@ text-decoration:none ;
 
 
 .skills {
-  min-height: 90vh;
+  
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
   border-bottom: #f7e017 2px solid;

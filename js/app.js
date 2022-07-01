@@ -37,7 +37,7 @@ const animations = () => {
     /*console.log(index);*/
     if (index === 0) return;
     section.style.opacity="0";
-    section.style.transition="all 2s";
+    section.style.transition="all 1.5s";
   });
 
   let sectionObserver = new IntersectionObserver(function(entries, observer){
