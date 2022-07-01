@@ -1,5 +1,23 @@
 console.log('Hello, Bienvenue dans la console !')
 
+function menuMobile() {
+  const btn = document.querySelector('.burger');
+  const header = document.querySelector('.header');
+  const menuLinks = document.querySelectorAll('.menu a');
+
+  btn.addEventListener('click', () => {
+    header.classList.toggle('show-nav');
+  });
+
+  menuLinks.forEach(menuLink => {
+    menuLink.addEventListener('click', () => {
+      header.classList.remove('show-nav');
+    });
+  });
+}
+
+menuMobile();
+
 function showProject() {
   const links = document.querySelectorAll('.projects__card-link');
   const modals = document.querySelectorAll('.modal');

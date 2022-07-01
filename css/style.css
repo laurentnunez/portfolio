@@ -174,12 +174,122 @@ strong {
   flex-direction: row;
 }
 
+
+@media screen and (max-width:768px) {
+
+  .header__social {
+    padding:0;
+    margin-right: 1rem;
+  }
+
+
+
+.header__social li {
+  margin: 0.5rem;
+}
+}
+
 .right {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+
+
+.burger {
+  background:none;
+  border:none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.burger .bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background:  black;
+}
+
+.burger .bar::before, .burger .bar::after {
+  display: block;
+  content:"";
+  width: 22px;
+  height: 3px;
+  background:  black;
+  position: absolute;
+}
+
+.burger .bar::before {
+  transform: translateY(-8px);
+}
+
+.burger .bar::after {
+  transform: translateY(8px);
+}
+
+@media screen and (max-width: 768px) {
+  .header__container-navbar {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    position: fixed;
+    top:55px;
+    left:110%;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    height: calc(100vh - 55px);
+    background: black;  
+    transition: all .4s ease-out;  
+  }
+
+  .menu {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  nav .menu li {
+    display: flex;
+    justify-content: center;
+  }
+  nav .menu a {
+    display: block;
+    font-size: 2rem;
+    padding:2rem;
+    transition: all .4s;
+    color:#f7e017;
+  }
+  .header.show-nav nav {
+    opacity: 1;
+    width: 100%;
+    left:0;
+    z-index: 3;
+  }
+  .header.show-nav nav li a:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+  .header.show-nav .burger .bar {
+    width:0;
+  }
+  .burger .bar::before,
+  .burger .bar::after  {
+    transition: all .2s ease-out;
+  }
+  .show-nav .burger .bar::before {
+    transform:rotate(-45deg);
+  }
+  .show-nav .burger .bar::after {
+    transform:rotate(45deg);
+  }
+
+
+}
 
 
 
@@ -192,10 +302,11 @@ strong {
     display: flex;
   }
   
-  
   .burger {
     display: none;
-  }
+  } 
+
+
 }
 
 
