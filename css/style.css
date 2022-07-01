@@ -586,6 +586,28 @@ strong {
 }
 
 
+@media screen and (max-width: 768px) {
+  .project__details {
+    padding: 5rem 1rem 5rem 1rem ;
+  }
+
+  .project__details img{
+    width: 90%;
+  }
+
+  .project__details iframe {
+    width: 90%;
+  }
+
+  .modal__content {
+    height: 150vh;
+  }
+}
+
+
+
+
+
 .download {
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
