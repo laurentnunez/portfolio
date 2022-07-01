@@ -23,7 +23,7 @@ li {
 section {
   align-items: center;
   text-align: center;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 3rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -313,8 +313,8 @@ strong {
 
 .about {
   background-color: black;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding-top: 5.5rem;
+  padding-bottom: 4.5rem;
 }
 
 
@@ -364,6 +364,7 @@ strong {
 @media screen and (max-width: 768px) {
   .about p {
     margin-top: 2rem;
+    font-size: 16;
   }
 }
 
@@ -406,7 +407,8 @@ strong {
 
 
 .skills {
-  
+  padding-top: 4.5rem;
+  padding-bottom: 5.5rem;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
   border-bottom: #f7e017 2px solid;
@@ -423,6 +425,8 @@ strong {
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
+  animation-duration: 2.5s;
+  animation-name: slideInleft;
 }
 
 .skills_right {
@@ -494,7 +498,10 @@ strong {
 
 .projects__container {
  display: flex;
- flex-direction: row;   
+ flex-direction: row;
+ animation-duration: 2s;
+  animation-name: slideInright;
+ 
 }
 
 @media screen and (max-width:768px) {
@@ -506,9 +513,8 @@ strong {
 
 .projects__card {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
   border-bottom: #f7e017 2px solid;
   overflow: hidden;
   opacity: 0.8;
@@ -520,7 +526,9 @@ strong {
   opacity: 1;
 }
 
- 
+.projects__card img {
+  width:80%
+}
  
  @media screen and (max-width:768px) {
    .projects__card {
@@ -551,7 +559,7 @@ strong {
 }
 
 .modal__content {
-  height: 120vh;
+  height: 140vh;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
   border-bottom: #f7e017 2px solid;
@@ -569,9 +577,12 @@ strong {
 }
 
 .project__details {
-  padding: 5rem 1rem 5rem 1rem ;
-  margin: 1rem 1rem 1rem 1rem;
-  
+  padding: 5rem 4rem 5rem 4rem ;
+  margin: 1rem 1rem 1rem 1rem;  
+}
+
+.project__details img{
+  width: 40%;
 }
 
 
@@ -649,7 +660,7 @@ strong {
 @media screen and (max-width: 768px) {
   .download__right-section {
     width: 100%;
-    padding: 0 1rem 2rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 }
 
@@ -764,4 +775,22 @@ footer {
 
 .show.modal {
   display:block;
+}
+
+@keyframes slideInleft {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInright {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
