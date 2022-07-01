@@ -1,4 +1,4 @@
-console.log('coucou !')
+console.log('Hello, Bienvenue dans la console !')
 
 function showProject() {
   const links = document.querySelectorAll('.projects__card-link');
@@ -29,3 +29,31 @@ function showProject() {
 }
 
 showProject();
+
+const animations = () => {
+  const sections = document.querySelectorAll('section');
+
+  sections.forEach((section, index)=> {
+    /*console.log(index);*/
+    if (index === 0) return;
+    section.style.opacity="0";
+    section.style.transition="all 2s";
+  });
+
+  let sectionObserver = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry=>{
+      if(entry.isIntersecting) {
+        let elem = entry.target;
+        /*console.log(elem);*/
+        elem.style.opacity=1;
+      }
+    });
+  });
+
+  sections.forEach(section=> {
+    sectionObserver.observe(section)
+  });
+
+}
+
+animations();
