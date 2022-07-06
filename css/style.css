@@ -315,6 +315,10 @@ strong {
   background-color: black;
   padding-top: 5.5rem;
   padding-bottom: 4.5rem;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 4rem;
+    }
 }
 
 
@@ -407,39 +411,57 @@ strong {
 
 
 .skills {
-  padding-top: 4.5rem;
-  padding-bottom: 5.5rem;
+  padding: 2rem 0 6rem 0 ;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
   border-bottom: #f7e017 2px solid;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    
 }
 
 .skills__title{
-  margin-top: 0;
+  margin-top: 2rem;
 }
-
-
 
 .skills__container {
   display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
+  flex-direction: column;
+  justify-content:center;
   animation-duration: 2.5s;
   animation-name: slideInleft;
-}
-
-.skills_right {
-  width: 80%;
-  padding: 4rem;
 }
 
 .skills__left {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 40%;
+  flex-direction: column;
+  width: 100%;
   
+}
+
+.skills__section-two {
+  display: flex;
+  justify-content: center;
+}
+
+.skills__right {
+  width: 100%;
+  padding: 0 0 4rem 0;
+  margin: 0 3rem 0 3rem;
+}
+
+.skills__right-2 {
+  width: 100%;
+  padding: 0 0 4rem 0;
+  margin: 0 3rem 0 3rem;
+}
+
+.skills__center {
+  width: 100%;
+  padding: 0 0 4rem 0;
+  margin: 0 3rem 0 3rem;
 }
 
 .skills__sub-section {
@@ -457,33 +479,63 @@ strong {
 }
 
 .skills svg {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
   .skills__container {
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+    width: 100%; 
   }
-  .skills_right {
+  .skills__right {
     width: 100%;
+    margin:0;
+    padding: 0 0 1rem 0;
   }
   
   .skills__left {
     width: 100%;
+    
+  }
+
+  .skills__center {
+    width: 100%;
+    margin:0;
+    padding: 0 0 1rem 0;
   }
 
   .skills__logos {
-    flex-wrap: wrap;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;  
   }
 
+  .skills__section-two {
+    flex-direction: column;
+  }
+
+
+  .skills__icon{
+  padding:1rem;
+  }
+
+  .skills svg {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 
 .skills__subsection {
   flex-direction: column;
   
+}
+
+.projects {
+  padding-top: 6rem ;
+  padding-bottom: 5rem;
 }
 
 .projects a {
@@ -512,8 +564,8 @@ strong {
 }
 
 .projects__card {
-  padding: 1rem;
-  margin: 0.5rem;
+  
+  margin: 1.5rem;
   background-color: #000000;
   border-bottom: #f7e017 2px solid;
   overflow: hidden;
@@ -527,7 +579,7 @@ strong {
 }
 
 .projects__card img {
-  width:80%
+  width:100%
 }
  
  @media screen and (max-width:768px) {
@@ -605,10 +657,9 @@ strong {
 }
 
 
-
-
-
 .download {
+  padding-top: 6rem ;
+  padding-bottom: 5rem;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
   border-bottom: #f7e017 2px solid;
