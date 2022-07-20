@@ -251,6 +251,7 @@ strong {
   .menu {
     flex-direction: column;
     padding-left: 0;
+    margin:0;
   }
 
   nav .menu li {
@@ -411,7 +412,7 @@ strong {
 
 
 .skills {
-  padding: 2rem 0 6rem 0 ;
+  padding: 4rem 0 4rem 0 ;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
   border-bottom: #f7e017 2px solid;
@@ -490,6 +491,12 @@ strong {
     width: 100%; 
   }
   .skills__right {
+    width: 100%;
+    margin:0;
+    padding: 0 0 1rem 0;
+  }
+
+  .skills__right-2 {
     width: 100%;
     margin:0;
     padding: 0 0 1rem 0;
