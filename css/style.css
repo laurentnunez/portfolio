@@ -595,10 +595,32 @@ strong {
   width:100%
 }
  
+
+.project__details-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
  @media screen and (max-width:768px) {
    .projects__card {
     padding: 2rem 0 2rem 0;  
    }
+
+   .project__details-mobile {
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-top: 1rem;
+    
+   }
+
+
  }
 
 
@@ -716,6 +738,10 @@ strong {
   border: #f7e017 1px solid;
   padding: 4rem;
   
+}
+
+.youtube_link{
+  color: #f7e017;
 }
 
 @media screen and (max-width: 768px) {
