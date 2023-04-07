@@ -667,6 +667,7 @@ strong {
   
   .projects {
     padding-bottom: 2rem;
+    margin: 1rem 0.2rem;
   }
 
   .projects__container {
@@ -677,6 +678,7 @@ strong {
   .projects__item {
     width: 100%;
     height: auto;
+    margin:0.5rem auto;
   }
 
   .projects__card {
