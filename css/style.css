@@ -565,7 +565,7 @@ strong {
 }
 
 .projects__item {
-  width: 25%;
+  width: 30%;
   height: auto;
   padding: 0.1rem;
   margin: 0.5rem;
@@ -760,6 +760,7 @@ strong {
   .download__left-section {
     width: 100%;
     padding: 2rem;
+    text-align: center;
   }
 }
 
