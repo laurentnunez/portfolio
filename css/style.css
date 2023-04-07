@@ -574,15 +574,14 @@ strong {
 }
 
 .projects__item:hover {
-  transform: scale(1.02);
-  transition: ease-in-out 0.5s;
+  
+  transition: ease-in-out all 0.5s;
 } 
 
 
-.projects__card {
-  
+.projects__card { 
   margin:0;
-  background-color: #000000;
+  background-color: #0e0e0e;
   overflow: hidden;
   opacity: 0.8;
   
@@ -681,7 +680,7 @@ strong {
   }
 
   .projects__card {
-    padding: 2rem 0 2rem 0;
+    padding-bottom: 2rem;
     margin: 0;  
    }
  
@@ -705,7 +704,7 @@ strong {
   }
 
   .modal__content {
-    height: 150vh;
+    height: 280vh;
   }
 }
 
